@@ -59,4 +59,14 @@ namespace Boolean.Network.Messages.Storage.Composers
         }
     }
 
+    class SoundSettingsComposer : IMessageComposer
+    {
+        public OutMessage Invoke(params object[] Parameters)
+        {
+            var Message = new OutMessage(308);
+            Message.Append(Parameters[0]);
+            return Message;
+        }
+    }
+
 }

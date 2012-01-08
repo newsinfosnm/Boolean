@@ -46,4 +46,17 @@ namespace Boolean.Network.Messages.Storage.Events
             MessageHandler.HandleComposer(Session, new IgnoredUsersMessageComposer(), StorageHandler.GetCharacterIgnores(Session.Character.Username));
         }
     }
+
+    class GetSoundSettingsEvent : IMessageEvent
+    {
+        public int Id
+        {
+            get { return 228; }
+        }
+
+        public void Invoke(Transmission.Session Session, Types.InMessage Message)
+        {
+            MessageHandler.HandleComposer(Session, new SoundSettingsComposer(), Session.Character.Soundvolume);
+        }
+    }
 }

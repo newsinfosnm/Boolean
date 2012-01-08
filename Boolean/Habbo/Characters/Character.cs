@@ -13,6 +13,7 @@ namespace Boolean.Habbo.Characters
 
         public int Credits;
         public int Pixels;
+        public int Soundvolume;
 
         public Character(DataRow Row)
         {
@@ -20,6 +21,7 @@ namespace Boolean.Habbo.Characters
             this.Username = (string)Row["username"];
             this.Credits = (int)Row["credits"];
             this.Pixels = (int)Row["pixels"];
+            this.Soundvolume = (int)Row["sound_volume"];
         }
     }
 }

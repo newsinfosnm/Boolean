@@ -19,7 +19,7 @@ namespace Boolean
         // _-2Pf[813] = com.sulake.habbo.communication.messages.outgoing.handshake.UniqueIDMessageComposer; 
         public const uint UniqueIDMessageEvent = 813;
 
-        // _-2Pf[1817] = com.sulake.habbo.communication.messages.outgoing.handshake.GetSessionParametersMessageComposer; 
+        // _-2Pf[1817] = com.sulake.habbo.communication.messages.outgoing.handshake.GetSessionParametersMessageComposer; f
         public const uint GetSessionParametersMessageEvent = 1817;
 
         // _-2Pf[415] = com.sulake.habbo.communication.messages.outgoing.handshake.SSOTicketMessageComposer; 

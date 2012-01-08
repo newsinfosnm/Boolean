@@ -42,3 +42,16 @@ C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\GenerateResource.read.1.tlog
 C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\Boolean.exe
 C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\Boolean.pdb
+C:\Users\Wichard\Boolean\Boolean\bin\Debug\PolicyFileRequest.xml
+C:\Users\Wichard\Boolean\Boolean\bin\Debug\Settings.ini
+C:\Users\Wichard\Boolean\Boolean\bin\Debug\Boolean.exe
+C:\Users\Wichard\Boolean\Boolean\bin\Debug\Boolean.pdb
+C:\Users\Wichard\Boolean\Boolean\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Wichard\Boolean\Boolean\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Users\Wichard\Boolean\Boolean\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Wichard\Boolean\Boolean\obj\x86\Debug\Boolean.ControlPanel.resources
+C:\Users\Wichard\Boolean\Boolean\obj\x86\Debug\Boolean.Properties.Resources.resources
+C:\Users\Wichard\Boolean\Boolean\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Wichard\Boolean\Boolean\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Wichard\Boolean\Boolean\obj\x86\Debug\Boolean.exe
+C:\Users\Wichard\Boolean\Boolean\obj\x86\Debug\Boolean.pdb

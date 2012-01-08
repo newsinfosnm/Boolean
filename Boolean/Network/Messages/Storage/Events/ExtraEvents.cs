@@ -27,5 +27,4 @@ namespace Boolean.Network.Messages.Storage.Events
 
         public void Invoke(Transmission.Session Session, Types.InMessage Message) { }
     }
-
 }
