@@ -1,0 +1,5 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "">
+<cross-domain-policy>
+<allow-access-from domain="*" to-ports="1-31111" />
+</cross-domain-policy>

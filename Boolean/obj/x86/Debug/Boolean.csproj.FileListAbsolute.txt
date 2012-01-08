@@ -1,0 +1,44 @@
+C:\Users\Wichard\AppData\Local\Temporary Projects\Boolean\bin\Debug\Boolean.exe
+C:\Users\Wichard\AppData\Local\Temporary Projects\Boolean\bin\Debug\Boolean.pdb
+C:\Users\Wichard\AppData\Local\Temporary Projects\Boolean\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Wichard\AppData\Local\Temporary Projects\Boolean\obj\x86\Debug\Boolean.exe
+C:\Users\Wichard\AppData\Local\Temporary Projects\Boolean\obj\x86\Debug\Boolean.pdb
+C:\Users\Wichard\documents\visual studio 2010\Projects\Boolean\Boolean\obj\x86\Debug\Boolean.exe
+C:\Users\Wichard\documents\visual studio 2010\Projects\Boolean\Boolean\obj\x86\Debug\Boolean.pdb
+C:\Users\Wichard\documents\visual studio 2010\Projects\Boolean\Boolean\bin\Debug\Boolean.exe
+C:\Users\Wichard\documents\visual studio 2010\Projects\Boolean\Boolean\bin\Debug\Boolean.pdb
+C:\Users\Wichard\documents\visual studio 2010\Projects\Boolean\Boolean\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Wichard\Documents\Visual Studio 2010\Projects\Boolean\Boolean\bin\Debug\Settings.ini
+C:\Users\Wichard\Documents\Visual Studio 2010\Projects\Boolean\Boolean\obj\x86\Debug\Boolean.Properties.Resources.resources
+C:\Users\Wichard\Documents\Visual Studio 2010\Projects\Boolean\Boolean\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Wichard\Documents\Visual Studio 2010\Projects\Boolean\Boolean\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Wichard\Documents\Visual Studio 2010\Projects\Boolean\Boolean\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Wichard\Documents\Visual Studio 2010\Projects\Boolean\Boolean\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Users\Wichard\Documents\Visual Studio 2010\Projects\Boolean\Boolean\bin\Debug\PolicyFileRequest.xml
+C:\Users\Wichard\Documents\Visual Studio 2010\Projects\Boolean\Boolean\bin\Debug\mysql.data.dll
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\bin\Debug\PolicyFileRequest.xml
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\bin\Debug\Settings.ini
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\bin\Debug\Boolean.exe
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\bin\Debug\Boolean.pdb
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\obj\x86\Debug\Boolean.exe
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\obj\x86\Debug\Boolean.pdb
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\obj\x86\Debug\Boolean.ControlPanel.resources
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\obj\x86\Debug\Boolean.Properties.Resources.resources
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Wichard\.ssh\Project-Boolean\Boolean\Boolean\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Wichard\.ssh\Project-Boolean\bin\Debug\PolicyFileRequest.xml
+C:\Users\Wichard\.ssh\Project-Boolean\bin\Debug\Settings.ini
+C:\Users\Wichard\.ssh\Project-Boolean\bin\Debug\Boolean.exe
+C:\Users\Wichard\.ssh\Project-Boolean\bin\Debug\Boolean.pdb
+C:\Users\Wichard\.ssh\Project-Boolean\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll
+C:\Users\Wichard\.ssh\Project-Boolean\bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.xml
+C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\Boolean.ControlPanel.resources
+C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\Boolean.Properties.Resources.resources
+C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\Boolean.exe
+C:\Users\Wichard\.ssh\Project-Boolean\obj\x86\Debug\Boolean.pdb
