@@ -10,17 +10,17 @@ namespace Boolean.Network.Transmission.SuperSocket
     {
         private Stack<SocketAsyncEventArgs> Pool;
 
-        internal SocketAsyncEventArgsPool(Int32 Capacity)
+        public SocketAsyncEventArgsPool(Int32 Capacity)
         {
             this.Pool = new Stack<SocketAsyncEventArgs>(Capacity);
         }
 
-        internal Int32 Count
+        public Int32 Count
         {
             get { return this.Pool.Count; }
         }
 
-        internal SocketAsyncEventArgs Pop()
+        public SocketAsyncEventArgs Pop()
         {
             lock (this.Pool)
             {
@@ -28,7 +28,7 @@ namespace Boolean.Network.Transmission.SuperSocket
             }
         }
 
-        internal void Push(SocketAsyncEventArgs item)
+        public void Push(SocketAsyncEventArgs item)
         {
             lock (this.Pool)
             {

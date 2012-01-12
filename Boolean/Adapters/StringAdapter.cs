@@ -11,5 +11,10 @@ namespace Boolean.Adapters
         {
             return Base.Replace("\"", string.Empty);
         }
+
+        public static bool GetBoolean(object Item)
+        {
+            return int.Parse(Item.ToString()) == 1;
+        }
     }
 }

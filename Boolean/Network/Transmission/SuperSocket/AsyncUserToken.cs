@@ -7,7 +7,6 @@ namespace Boolean.Network.Transmission.SuperSocket
     class AsyncUserToken
     {
         public Socket Socket;
-        public byte[] Buffer;
         public bool Redused;
 
         public AsyncUserToken() : this(null) { }
@@ -16,7 +15,6 @@ namespace Boolean.Network.Transmission.SuperSocket
         {
             this.Socket = Socket;
             this.Redused = false;
-            this.Buffer = new byte[SessionHandler.RECV_BUFFER_SIZE];
         }
     }
 }

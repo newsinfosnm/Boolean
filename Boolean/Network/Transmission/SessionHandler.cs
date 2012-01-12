@@ -26,6 +26,7 @@ namespace Boolean
         private static Socket BaseSocket;
         private static Semaphore SocketSemaphore;
         private static Dictionary<int, Session> Sessions;
+        private static BufferManager BufferManager;
 
         private static int ConnectedAmount;
         private static int Counter;
@@ -56,15 +57,16 @@ namespace Boolean
                 SocketPool = new SocketAsyncEventArgsPool(MaxConnections);
                 ConnectedAmount = new int();
                 SocketSemaphore = new Semaphore(MaxConnections, MaxConnections);
+                BufferManager = new BufferManager(RECV_BUFFER_SIZE * MaxConnections * OPS_TO_PRE_ALLOC, RECV_BUFFER_SIZE);
 
-                Solution.AppendLine("SessionHandler: Pushing SocketAsync({0}) into a async-pool.", MaxConnections);
+                Solution.AppendLine("SessionHandler: Pushing SocketAsync({0}), big-buffer({1})", MaxConnections, BufferManager.Buffer.Length);
 
                 for (int i = 0; i < MaxConnections; i++)
                 {
                     var Async = new SocketAsyncEventArgs();
                     Async.Completed += new EventHandler<SocketAsyncEventArgs>(Async_Completed);
                     Async.UserToken = new AsyncUserToken();
-                    Async.SetBuffer((Async.UserToken as AsyncUserToken).Buffer, 0, (Async.UserToken as AsyncUserToken).Buffer.Length);
+                    BufferManager.SetBuffer(Async);
 
                     SocketPool.Push(Async);
                 }
@@ -130,13 +132,14 @@ namespace Boolean
         private static void HandleReceive(SocketAsyncEventArgs Args)
         {
             var Token = Args.UserToken as AsyncUserToken;
+
             try
             {
                 if (Args.BytesTransferred > 0 && Args.SocketError == SocketError.Success)
                 {
                     var Received = new byte[Args.BytesTransferred];
 
-                    Array.Copy(Token.Buffer, Received, Args.BytesTransferred);
+                    Array.Copy(BufferManager.Buffer,Args.Offset, Received,0, Args.BytesTransferred);
 
                     MessageHandler.HandleBytes(GetSession(Token.Socket), ref Received);
                 }

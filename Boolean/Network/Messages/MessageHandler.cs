@@ -103,7 +103,15 @@ namespace Boolean
                 var Event = Events[InMessage.Id];
                 var EventName = Event.ToString().Split('.')[Event.ToString().Split('.').Count() - 1];
 
-                Event.Invoke(Session, InMessage);
+                try
+                {
+                    Event.Invoke(Session, InMessage);
+                }
+                catch (Exception e)
+                {
+                    Solution.AppendPaint();
+                    Solution.AppendLine(e.ToString());
+                }
 
                 Solution.AppendLine("HandleEvent: ({0}){1}({2})", Session.Id, EventName, InMessage.Id);
             }

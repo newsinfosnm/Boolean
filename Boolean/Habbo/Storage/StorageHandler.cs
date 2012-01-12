@@ -16,6 +16,8 @@ namespace Boolean
 
         public static SerializeResult Serialize()
         {
+            NavigatorHandler.Serialize();
+
             try
             {
                 CharacterIgnores = new Dictionary<int, CharacterIgnore>();

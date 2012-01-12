@@ -12,8 +12,15 @@ namespace Boolean.Network.Messages.Storage.Composers
     {
         public Types.OutMessage Invoke(params object[] Parameters)
         {
+            var Length = (int)(Parameters[0].ToString().Length / 720);
+
+            if (Length <= 0)
+            {
+                Length = 1;
+            }
+
             var Message = new OutMessage(810);
-            Message.Append(Parameters[0].ToString().Split((char)13,(char)10).Length);
+            Message.Append(Length);
             Message.Append(Parameters[0]);
             return Message;
         }

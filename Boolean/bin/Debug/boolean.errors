@@ -2039,3 +2039,34 @@ Object name: 'System.Net.Sockets.Socket'.
    at System.Net.Sockets.SocketAsyncEventArgs.CompletionPortCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* nativeOverlapped)
    at System.Threading._IOCompletionCallback.PerformIOCompletionCallback(UInt32 errorCode, UInt32 numBytes, NativeOverlapped* pOVERLAP)
 
+12-1-2012 20:40:42 > System.InvalidCastException: Specified cast is not valid.
+   at Boolean.Habbo.Navigator.NavigatorPublic..ctor(DataRow Row) in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorPublic.cs:line 32
+   at Boolean.NavigatorHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorHandler.cs:line 24
+   at Boolean.StorageHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Storage\StorageHandler.cs:line 19
+   at Boolean.Solution.Main() in C:\Users\Wichard\Boolean\Boolean\Helpers\Solution.cs:line 52
+
+12-1-2012 20:41:37 > System.InvalidCastException: Specified cast is not valid.
+   at Boolean.Habbo.Navigator.NavigatorPublic..ctor(DataRow Row) in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorPublic.cs:line 32
+   at Boolean.NavigatorHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorHandler.cs:line 24
+   at Boolean.StorageHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Storage\StorageHandler.cs:line 19
+   at Boolean.Solution.Main() in C:\Users\Wichard\Boolean\Boolean\Helpers\Solution.cs:line 52
+
+12-1-2012 20:42:00 > System.InvalidCastException: Specified cast is not valid.
+   at Boolean.Habbo.Navigator.NavigatorPublic..ctor(DataRow Row) in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorPublic.cs:line 32
+   at Boolean.NavigatorHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorHandler.cs:line 24
+   at Boolean.StorageHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Storage\StorageHandler.cs:line 19
+   at Boolean.Solution.Main() in C:\Users\Wichard\Boolean\Boolean\Helpers\Solution.cs:line 52
+
+12-1-2012 20:42:49 > System.InvalidCastException: Specified cast is not valid.
+   at Boolean.Habbo.Navigator.NavigatorPublic..ctor(DataRow Row) in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorPublic.cs:line 32
+   at Boolean.NavigatorHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorHandler.cs:line 24
+   at Boolean.StorageHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Storage\StorageHandler.cs:line 19
+   at Boolean.Solution.Main() in C:\Users\Wichard\Boolean\Boolean\Helpers\Solution.cs:line 52
+
+12-1-2012 20:43:17 > System.InvalidCastException: Specified cast is not valid.
+   at Boolean.Adapters.StringAdapter.GetBoolean(Object Item) in C:\Users\Wichard\Boolean\Boolean\Adapters\StringAdapter.cs:line 17
+   at Boolean.Habbo.Navigator.NavigatorPublic..ctor(DataRow Row) in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorPublic.cs:line 34
+   at Boolean.NavigatorHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Navigator\NavigatorHandler.cs:line 24
+   at Boolean.StorageHandler.Serialize() in C:\Users\Wichard\Boolean\Boolean\Habbo\Storage\StorageHandler.cs:line 19
+   at Boolean.Solution.Main() in C:\Users\Wichard\Boolean\Boolean\Helpers\Solution.cs:line 52
+
