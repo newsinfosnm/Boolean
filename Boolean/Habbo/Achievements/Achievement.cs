@@ -33,6 +33,26 @@ namespace Boolean.Habbo.Achievements
 
         public void GetResponse(OutMessage Message, Character Character)
         {
+            Message.Append(Id);
+            Message.Append(1); // TODO <> NextLevel
+            Message.Append(GetBadge(1)); // TODO <>
+            Message.Append(1); // TODO <> NeedForNextLevel
+            Message.Append(GetPixelReward(1)); // TODO <>
+            Message.Append(0); // TODO <> BadgeId
+            Message.Append(0); // TODO <> GotAlready
+            Message.Append(false); // TODO <> ProgressFilled
+            Message.Append(AchievementHandler.GetCategory(ParentId).Caption.ToLower());
+            Message.Append(1); // TODO <> MaximalLevel
+        }
+
+        public int GetPixelReward(int Level)
+        {
+            return (int)(PixelReward * (Level * Formula));
+        }
+
+        public string GetBadge(int Level)
+        {
+            return TideBadge ? string.Format("{0}{1}", Badge, Level) : Badge;
         }
     }
 }

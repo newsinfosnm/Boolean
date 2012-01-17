@@ -6,6 +6,7 @@ using System.Text;
 using Boolean.Network.Messages.Interfaces;
 using Boolean.Network.Messages.Types;
 using Boolean.Habbo.Characters;
+using Boolean.Habbo.Achievements;
 
 namespace Boolean.Network.Messages.Storage.Composers
 {
@@ -69,4 +70,22 @@ namespace Boolean.Network.Messages.Storage.Composers
         }
     }
 
+    class AchievementsComposer : IMessageComposer
+    {
+        public OutMessage Invoke(params object[] Parameters)
+        {
+            var Message = new OutMessage(436);
+            var Character = Parameters[0] as Character;
+            var Items = AchievementHandler.GetAchievements(Character);
+
+            Message.Append(Items.Count());
+
+            foreach (var Item in Items)
+            {
+                Item.GetResponse(Message,Character);
+            }
+
+            return Message;
+        }
+    }
 }

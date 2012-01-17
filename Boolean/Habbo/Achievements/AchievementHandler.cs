@@ -19,7 +19,7 @@ namespace Boolean
         {
             Achievements = new Dictionary<int, Achievement>();
 
-            using (var Client = new DatabaseClient("SELECT * FROM achievements"))
+            using (var Client = new DatabaseClient("SELECT * FROM achievements ORDER BY parent_id ASC"))
             {
                 foreach (DataRow Row in Client.GetTable().Rows)
                 {
@@ -42,9 +42,15 @@ namespace Boolean
             }
         }
 
-        public IEnumerable<Achievement> GetAchievements(Character Character)
+        public static IEnumerable<Achievement> GetAchievements(Character Character)
         {
             return (from kvp in Achievements where kvp.Value.RankRequired <= Character.Rank where AchievementCategorys.ContainsKey(kvp.Value.ParentId) select kvp.Value);
+        }
+
+        public static AchievementCategory GetCategory(int Id)
+        {
+            try { return AchievementCategorys[Id]; }
+            catch { return null; }
         }
     }
 }

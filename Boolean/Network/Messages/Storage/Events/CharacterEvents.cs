@@ -59,4 +59,18 @@ namespace Boolean.Network.Messages.Storage.Events
             MessageHandler.HandleComposer(Session, new SoundSettingsComposer(), Session.Character.Soundvolume);
         }
     }
+
+    class GetAchievementsEvent : IMessageEvent
+    {
+        public int Id
+        {
+            get { return 370; }
+        }
+
+        public void Invoke(Transmission.Session Session, Types.InMessage Message)
+        {
+            MessageHandler.HandleComposer(Session, new AchievementsComposer(), Session.Character);
+        }
+    }
+
 }
