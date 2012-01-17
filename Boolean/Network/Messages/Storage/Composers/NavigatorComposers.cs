@@ -13,15 +13,18 @@ namespace Boolean.Network.Messages.Storage.Composers
         public OutMessage Invoke(params object[] Parameters)
         {
             var Message = new OutMessage(450);
-            Message.Append(NavigatorHandler.Publics.Count);
+            Message.Append(NavigatorHandler.Validate());
 
             foreach (var Public in NavigatorHandler.GetChilds(-1))
             {
                 Public.GetResponse(Message);
 
-                foreach (var Child in NavigatorHandler.GetChilds(Public.Id))
+                if (Public.Type == 4)
                 {
-                    Child.GetResponse(Message);
+                    foreach (var Child in NavigatorHandler.GetChilds(Public.Id))
+                    {
+                        Child.GetResponse(Message);
+                    }
                 }
             }
 

@@ -17,6 +17,7 @@ namespace Boolean
         public static SerializeResult Serialize()
         {
             NavigatorHandler.Serialize();
+            AchievementHandler.Serialize();
 
             try
             {

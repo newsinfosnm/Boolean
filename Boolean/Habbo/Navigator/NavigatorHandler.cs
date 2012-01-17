@@ -28,6 +28,25 @@ namespace Boolean
             }
         }
 
+        public static int Validate()
+        {
+            var Result = new int();
+
+            foreach (var kvp in Publics)
+            {
+                if (kvp.Value.ParentId > 0)
+                {
+                    if (Publics.ContainsKey(kvp.Value.ParentId))
+                    {
+                        Result++;
+                    }
+                }
+                else Result++;
+            }
+
+            return Result;
+        }
+
         public static IEnumerable<NavigatorPublic> GetChilds(int Id)
         {
             return (from kvp in Publics where kvp.Value.ParentId == Id select kvp.Value);

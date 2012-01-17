@@ -36,7 +36,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Boolean.ico</ApplicationIcon>
+    <ApplicationIcon>on-fire.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>Boolean.Solution</StartupObject>
@@ -71,6 +71,9 @@
       <DependentUpon>ControlPanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Enumerables\SerializeResult.cs" />
+    <Compile Include="Habbo\Achievements\Achievement.cs" />
+    <Compile Include="Habbo\Achievements\AchievementCategory.cs" />
+    <Compile Include="Habbo\Achievements\AchievementHandler.cs" />
     <Compile Include="Habbo\Characters\Character.cs" />
     <Compile Include="Habbo\Characters\CharacterHandler.cs" />
     <Compile Include="Habbo\Navigator\NavigatorHandler.cs" />
@@ -113,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Boolean.ico" />
+    <Content Include="on-fire.ico" />
     <Content Include="PolicyFileRequest.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -132,6 +136,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Habbo\Badges\" />
     <Folder Include="Helpers\Commands\Storage\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

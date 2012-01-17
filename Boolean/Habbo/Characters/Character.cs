@@ -10,6 +10,7 @@ namespace Boolean.Habbo.Characters
     {
         public int Id;
         public string Username;
+        public int Rank;
 
         public int Credits;
         public int Pixels;
@@ -19,6 +20,7 @@ namespace Boolean.Habbo.Characters
         {
             this.Id = (int)Row["id"];
             this.Username = (string)Row["username"];
+            this.Rank = (int)Row["rank"];
             this.Credits = (int)Row["credits"];
             this.Pixels = (int)Row["pixels"];
             this.Soundvolume = (int)Row["sound_volume"];

@@ -69,6 +69,7 @@ namespace Boolean.Habbo.Navigator
                     Message.Append(0);
                     Message.Append(CCTs);
                     Message.Append(25); // TODO: LimitUsers
+                    Message.Append(RoomId);
                     break;
                 case 4:
                     Message.Append(Focus);
