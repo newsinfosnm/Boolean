@@ -21,6 +21,7 @@ namespace Boolean.Habbo.Achievements
         public string Badge;
         public double Formula;
         public bool TideBadge;
+        public int ScorePerLevel;
 
         public Achievement(DataRow Row)
         {
@@ -31,6 +32,7 @@ namespace Boolean.Habbo.Achievements
             this.Badge = (string)Row["badge"];
             this.Formula = (double)Row["formula"];
             this.TideBadge = StringAdapter.GetBoolean(Row["tide_badge"].ToString());
+            this.ScorePerLevel = (int)Row["score_per_level"];
         }
 
         public void GetResponse(OutMessage Message, Character Character)

@@ -25,5 +25,19 @@ namespace Boolean.Habbo.Characters
             this.Pixels = (int)Row["pixels"];
             this.Soundvolume = (int)Row["sound_volume"];
         }
+
+        public int GetAchievementScore()
+        {
+            var Result = 0;
+
+            foreach (var AchievementProgress in StorageHandler.GetCharacterAchievements(Id))
+            {
+                var Achievement = AchievementHandler.GetAchievement(AchievementProgress.Id);
+
+                Result += (AchievementProgress.CurrentLevel * Achievement.ScorePerLevel);
+            }
+
+            return Result;
+        }
     }
 }

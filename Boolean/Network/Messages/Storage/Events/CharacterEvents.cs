@@ -31,6 +31,7 @@ namespace Boolean.Network.Messages.Storage.Events
         public void Invoke(Transmission.Session Session, Types.InMessage Message)
         {
             MessageHandler.HandleComposer(Session, new CreditBalanceComposer(), Session.Character.Credits);
+            MessageHandler.HandleComposer(Session, new AchievementsScoreComposer(), Session.Character.GetAchievementScore());
         }
     }
 
@@ -72,5 +73,4 @@ namespace Boolean.Network.Messages.Storage.Events
             MessageHandler.HandleComposer(Session, new AchievementsComposer(), Session.Character);
         }
     }
-
 }

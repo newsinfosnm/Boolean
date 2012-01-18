@@ -80,7 +80,7 @@ namespace Boolean.Network.Messages.Storage.Events
             {
                 Solution.AppendPaint();
                 Solution.AppendLine("Session: Closed({0}) Ping to high({1})",Session.Id, Ping);
-                SessionHandler.CloseClientSocket(Session.Args);
+               // SessionHandler.CloseClientSocket(Session.Args);
             }
         }
     }

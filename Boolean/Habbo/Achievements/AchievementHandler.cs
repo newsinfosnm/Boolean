@@ -62,6 +62,12 @@ namespace Boolean
             return Result;
         }
 
+        public static Achievement GetAchievement(int Id)
+        {
+            try { return Achievements[Id]; }
+            catch { return null; }
+        }
+
         public static AchievementCategory GetCategory(int Id)
         {
             try { return AchievementCategorys[Id]; }

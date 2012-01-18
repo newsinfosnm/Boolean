@@ -88,4 +88,14 @@ namespace Boolean.Network.Messages.Storage.Composers
             return Message;
         }
     }
+
+    class AchievementsScoreComposer : IMessageComposer
+    {
+        public OutMessage Invoke(params object[] Parameters)
+        {
+            var Message = new OutMessage(443);
+            Message.Append(Parameters[0]);
+            return Message;
+        }
+    }
 }
