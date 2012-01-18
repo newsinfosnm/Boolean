@@ -49,7 +49,17 @@ namespace Boolean
 
         public static IEnumerable<NavigatorPublic> GetChilds(int Id)
         {
-            return (from kvp in Publics where kvp.Value.ParentId == Id select kvp.Value);
+            var Result = new List<NavigatorPublic>();
+
+            foreach (var Item in Publics.Values)
+            {
+                if (Item.ParentId == Id)
+                {
+                    Result.Add(Item);
+                }
+            }
+
+            return Result;
         }
     }
 }

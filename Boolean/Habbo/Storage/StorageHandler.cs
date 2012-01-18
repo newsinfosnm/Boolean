@@ -74,17 +74,47 @@ namespace Boolean
 
         public static IEnumerable<string> GetCharacterIgnores(string Username)
         {
-            return (from kvp in CharacterIgnores where kvp.Value.CharacterName == Username select kvp.Value.IgnoreName);
+            var Result = new List<string>();
+
+            foreach (var Item in CharacterIgnores.Values)
+            {
+                if (Item.CharacterName == Username)
+                {
+                    Result.Add(Item.IgnoreName);
+                }
+            }
+
+            return Result;
         }
 
         public static IEnumerable<CharacterAchievement> GetCharacterAchievements(int Id)
         {
-            return (from kvp in CharacterAchievements where kvp.Value.CharacterId == Id select kvp.Value);
+            var Result = new List<CharacterAchievement>();
+
+            foreach (var Item in CharacterAchievements.Values)
+            {
+                if (Item.CharacterId == Id)
+                {
+                    Result.Add(Item);
+                }
+            }
+
+            return Result;
         }
 
         public static IEnumerable<AchievementDetail> GetAchievementDetailsSorted(int AchievementId)
         {
-            return (from kvp in AchievementDetails where kvp.Value.AchievementId == AchievementId orderby kvp.Value.Level ascending select kvp.Value);
+            var Result = new List<AchievementDetail>();
+
+            foreach (var Item in AchievementDetails.Values)
+            {
+                if (Item.AchievementId == AchievementId)
+                {
+                    Result.Add(Item);
+                }
+            }
+
+            return Result;
         }
     }
 }

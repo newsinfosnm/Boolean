@@ -44,7 +44,22 @@ namespace Boolean
 
         public static IEnumerable<Achievement> GetAchievements(Character Character)
         {
-            return (from kvp in Achievements where kvp.Value.RankRequired <= Character.Rank where AchievementCategorys.ContainsKey(kvp.Value.ParentId) select kvp.Value);
+            var Result = new List<Achievement>();
+
+            foreach (var Item in Achievements.Values)
+            {
+                if (!AchievementCategorys.ContainsKey(Item.ParentId))
+                {
+                    continue;
+                }
+
+                if (Character.Rank >= Item.RankRequired)
+                {
+                    Result.Add(Item);
+                }
+            }
+
+            return Result;
         }
 
         public static AchievementCategory GetCategory(int Id)

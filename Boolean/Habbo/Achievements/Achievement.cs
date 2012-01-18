@@ -37,26 +37,41 @@ namespace Boolean.Habbo.Achievements
         {
             var Achievements = StorageHandler.GetCharacterAchievements(Character.Id);
             var Details = StorageHandler.GetAchievementDetailsSorted(Id);
-            var QueryA = (from item in Achievements where item.AchievementId == Id select item);
-            var MaxLevel = Details.Count() > 0 ? Details.Count() : 1;
 
-            var MyProgress = QueryA.Count() > 0 ? QueryA.First() : new CharacterAchievement(-1, Character.Id, Id, 0);
+            int MaxLevel = Details.Count() > 0 ? Details.Count() : 1;
+
+            var MyProgress = new CharacterAchievement(-1, Character.Id, Id, 0);
+
+            foreach (var Item in Achievements)
+            {
+                if (Item.AchievementId == Id)
+                {
+                    MyProgress = Item;
+                }
+            }
+
             var CurrentLevel = MyProgress.CurrentLevel;
             var NextLevel = (CurrentLevel + 1);
 
+            int NextRequired = 1;
+
+            foreach (var Item in Details)
+            {
+                if (Item.Level == NextLevel)
+                {
+                    NextRequired = Item.RequiredAmmount;
+                }
+            }
+
             if (NextLevel > MaxLevel)
             {
-                NextLevel= MaxLevel;
+                NextLevel = MaxLevel;
             }
 
             if (CurrentLevel >= MaxLevel)
             {
                 CurrentLevel = MaxLevel;
             }
-
-            var QueryB = (from item in Details where item.Level == NextLevel select item);
-
-            var NextRequired = QueryB.Count() > 0 ?  QueryB.First().RequiredAmmount : 1;
 
             Message.Append(Id);
             Message.Append(NextLevel);
