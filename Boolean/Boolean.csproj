@@ -78,7 +78,9 @@
     <Compile Include="Habbo\Characters\CharacterHandler.cs" />
     <Compile Include="Habbo\Navigator\NavigatorHandler.cs" />
     <Compile Include="Habbo\Navigator\NavigatorPublic.cs" />
-    <Compile Include="Habbo\Storage\Items\CharacterIgnore.cs" />
+    <Compile Include="Habbo\Storage\Items\Achievements\AchievementDetail.cs" />
+    <Compile Include="Habbo\Storage\Items\Characters\CharacterAchievement.cs" />
+    <Compile Include="Habbo\Storage\Items\Characters\CharacterIgnore.cs" />
     <Compile Include="Habbo\Storage\StorageHandler.cs" />
     <Compile Include="Helpers\Commands\CommandHandler.cs" />
     <Compile Include="Helpers\Commands\IConsoleCommand.cs" />

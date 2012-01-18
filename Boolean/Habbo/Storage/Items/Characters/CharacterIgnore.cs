@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Data;
 
-namespace Boolean.Habbo.Storage.Items
+namespace Boolean.Habbo.Storage.Items.Characters
 {
     class CharacterIgnore
     {
