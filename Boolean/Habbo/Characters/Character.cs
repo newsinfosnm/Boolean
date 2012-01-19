@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Data;
 
+using Boolean.Network.Transmission;
+using Boolean.Network.Messages.Storage.Composers;
+
 namespace Boolean.Habbo.Characters
 {
     class Character
@@ -38,6 +41,28 @@ namespace Boolean.Habbo.Characters
             }
 
             return Result;
+        }
+
+        public void RefreshAchievement(int AchievementId)
+        {
+            var Achievement = AchievementHandler.GetAchievement(AchievementId);
+
+            if (Achievement == null)
+            {
+                return;
+            }
+
+            if (Rank < Achievement.RankRequired)
+            {
+                return;
+            }
+
+            MessageHandler.HandleComposer(GetSession(), new AchievementComposer(), Achievement, this);
+        }
+
+        public Session GetSession()
+        {
+            return SessionHandler.GetSessionByCharacterId(Id);
         }
     }
 }

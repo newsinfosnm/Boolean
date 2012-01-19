@@ -92,6 +92,7 @@
     <Compile Include="Network\Messages\Interfaces\IMessageEvent.cs" />
     <Compile Include="Network\Messages\MessageHandler.cs" />
     <Compile Include="Network\Messages\Storage\Composers\CharacterComposers.cs" />
+    <Compile Include="Network\Messages\Storage\Composers\ExtraComposers.cs" />
     <Compile Include="Network\Messages\Storage\Composers\GlobalComposers.cs" />
     <Compile Include="Network\Messages\Storage\Composers\HandshakeComposers.cs" />
     <Compile Include="Network\Messages\Storage\Composers\NavigatorComposers.cs" />

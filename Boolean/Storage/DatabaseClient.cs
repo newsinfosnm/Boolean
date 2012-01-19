@@ -24,6 +24,15 @@ namespace Boolean.Storage
             Parameters.Add(new MySqlParameter("@" + Name, Obj));
         }
 
+        public string GetString()
+        {
+            try
+            {
+                return MySqlHelper.ExecuteScalar(DatabaseHandler.ConnectionString, Query, Parameters.ToArray()) as string;
+            }
+            catch { return string.Empty; }
+        }
+
         public DataRow GetRow()
         {
             try

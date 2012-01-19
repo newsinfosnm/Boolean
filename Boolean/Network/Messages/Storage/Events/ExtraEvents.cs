@@ -27,4 +27,17 @@ namespace Boolean.Network.Messages.Storage.Events
 
         public void Invoke(Transmission.Session Session, Types.InMessage Message) { }
     }
+
+    class GetBadgePointLimitsEvent : IMessageEvent
+    {
+        public int Id
+        {
+            get { return 3032; }
+        }
+
+        public void Invoke(Transmission.Session Session, Types.InMessage Message)
+        {
+            MessageHandler.HandleComposer(Session, new BadgePointLimitsComposer());
+        }
+    }
 }

@@ -46,6 +46,22 @@ namespace Boolean
             return null;
         }
 
+        public static Session GetSessionByCharacterId(int Id)
+        {
+            foreach (var kvp in Sessions)
+            {
+                if (kvp.Value.Character != null)
+                {
+                    if (kvp.Value.Character.Id == Id)
+                    {
+                        return kvp.Value;
+                    }
+                }
+            }
+
+            return null;
+        }
+
         public static SerializeResult Serialize()
         {
             try

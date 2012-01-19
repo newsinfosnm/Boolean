@@ -98,4 +98,14 @@ namespace Boolean.Network.Messages.Storage.Composers
             return Message;
         }
     }
+
+    class AchievementComposer : IMessageComposer
+    {
+        public OutMessage Invoke(params object[] Parameters)
+        {
+            var Message = new OutMessage(913);
+            (Parameters[0] as Achievement).GetResponse(Message, (Parameters[1] as Character));
+            return Message;
+        }
+    }
 }
